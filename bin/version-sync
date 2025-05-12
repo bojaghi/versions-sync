@@ -2,8 +2,6 @@
 <?php
 use Bojaghi\VersionSync\VersionSync;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
-
 if ('cli' !== php_sapi_name()) {
     die('This script is CLI only.');
 }
