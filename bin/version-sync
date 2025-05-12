@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+use Bojaghi\VersionSync\VersionSync;
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+if ('cli' !== php_sapi_name()) {
+    die('This script is CLI only.');
+}
+
+try {
+    $sync = new VersionSync();
+    $sync->run();
+} catch(Exception $e) {
+    die($e->getCode() . ': ' . $e->getMessage());
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<phpunit
+        bootstrap="tests/bootstrap.php"
+        backupGlobals="false"
+        colors="true"
+        displayDetailsOnTestsThatTriggerDeprecations="true"
+        displayDetailsOnTestsThatTriggerErrors="true"
+        displayDetailsOnTestsThatTriggerNotices="true"
+        displayDetailsOnTestsThatTriggerWarnings="true"
+        displayDetailsOnPhpunitDeprecations="true"
+>
+    <testsuites>
+        <testsuite name="testing">
+            <directory prefix="Test" suffix=".php">./tests/</directory>
+            <exclude>./tests/TestSample.php</exclude>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -1,25 +1,36 @@
 {
-    "name": "bojaghi/boilerplate",
-    "description": "",
-    "homepage": "",
+    "name": "bojaghi/version-sync",
+    "description": "여러 다른 파일에 선언되어 있는 버전 정보를 동기화합니다.",
+    "homepage": "https://github.com/bojaghi/versions-sync",
     "type": "library",
     "license": "GPL-2.0-or-later",
     "autoload": {
         "psr-4": {
+            "Bojaghi\\VersionSync\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "Bojaghi\\VersionSync\\Tests\\": "tests/"
         }
     },
     "authors": [
+        {
+            "name": "changwoo",
+            "email": "ep6tri@hotmail.com",
+            "homepage": "https://blog.changwoo.pe.kr"
+        }
+    ],
+    "bin": [
+        "bin/version-sync"
     ],
     "require": {
         "php": ">=8.0"
     },
     "require-dev": {
+        "phpunit/phpunit": "^12.1"
     },
     "scripts": {
     },
-    "version": "1.0.1"
+    "version": "1.0.0"
 }
