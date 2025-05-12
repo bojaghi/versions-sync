@@ -6,6 +6,8 @@ if ('cli' !== php_sapi_name()) {
     die('This script is CLI only.');
 }
 
+require_once getcwd() . '/vendor/autoload.php';
+
 try {
     $sync = new VersionSync();
     $sync->run();
